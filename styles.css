@@ -10,8 +10,11 @@ article.featured {
     border: 2px solid #FFA000;
 }
 
+article.featured:hover {
+    background-color: #FFB300;
+}
+
 article p {
     line-height: 1.5;
     font-style: italic;
-}
-    
+}   
