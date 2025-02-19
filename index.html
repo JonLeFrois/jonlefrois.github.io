@@ -3,14 +3,98 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
-        <style>
-            h1 {
-                background-color: blue;
-            }
-        </style>
+        <title>Home Page</title>
+        <link href="common_style.css" rel="stylesheet">
     </head>
     <body>
-        <h1>Hello World!</h1>
+        <header>
+            <nav>
+                <ul class="nav-bar">
+                    <li class="active"><a href="index.html">Home</a></li>
+                    <li><a href="aboutme.html">About Me</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="experiences.html">Experiences</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section class="intro">
+                <div>
+                    <h1>Hi, I'm Jon!</h1>
+                    <p>
+                        Currently, I am a Senior at Siena College in Loudonville, NY. I am finishing 
+                        BS degrees in both Computer Science and Actuarial Science and 
+                        I have a strong passion for software development, particularly frontend 
+                        development, and data analytics. Welcome to my webpage!
+                    </p>
+                </div>
+                <div id="profilePhoto">
+                    <img src="Photo.jpeg" alt="Profile photo" height="350" width="271">
+                </div>
+            </section>
+            <section>
+                <article class="skills">
+                    <h2>Computer Skills and Experience</h2>
+                    <p>I have experience with many different languages, frameworks, design tools and 
+                        more and these are the ones I have the most proficiency in:</p>
+                </article>
+                <div class="skills-container">
+                    <div class="skill-box">    
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg" alt="java logo"/>
+                        <span>Java</span>
+                    </div>
+                    <div class="skill-box">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" alt="javascript logo" />
+                        <span>JavaScript</span>
+                    </div>
+                    <div class="skill-box">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" alt="react logo"/>
+                        <span>React.js</span>
+                    </div>
+                    <div class="skill-box">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" alt="html logo"/>
+                        <span>HTML5</span>
+                    </div>
+                    <div class="skill-box">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" alt="css logo"/>
+                        <span>CSS</span>
+                    </div>
+                    <div class="skill-box">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" alt="python logo"/>
+                        <span>Python</span>
+                    </div>
+                    <div class="skill-box">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/r/r-original.svg" alt="r logo"/>
+                        <span>R</span>
+                    </div>
+                    <div class="skill-box">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/csharp/csharp-original.svg" alt="c-sharp logo"/>
+                        <span>C#</span>
+                    </div>
+                    <div class="skill-box">
+                        <img src="sqllogo.svg" alt="sql logo"/>
+                        <span>SQL</span>
+                    </div>
+                    <div class="skill-box">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/figma/figma-original.svg" alt="figma logo"/>
+                        <span>Figma</span>
+                    </div>
+                    <div class="skill-box">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/azure/azure-original.svg" alt="azure logo"/>
+                        <span>Azure</span>
+                    </div>
+                    <div class="skill-box">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg" alt="nodejs logo"/>
+                        <span>Node.js</span>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <p>&copy; Jon LeFrois 2025</p>
+            <a class="logo" href="https://linkedin.com/in/jon-lefrois/" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png" alt="LinkedIn" width="35" height="35">
+            </a>
+        </footer>
     </body>
 </html>
