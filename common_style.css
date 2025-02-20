@@ -11,8 +11,6 @@ body {
 }
 
 main {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
     flex: 1;
 }
 
@@ -20,14 +18,14 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: url('nav-background.jpg') center center;
+    background: url('images/nav-background.jpg') center center;
     background-size: cover;
     padding: 10px;
     color: white;
 }
 
 nav {
-    background: url('nav-background.jpg') center center;
+    background: url('images/nav-background.jpg') center center;
     background-size: cover;
     padding: 10px 0;
     display: flex;
@@ -64,6 +62,11 @@ nav {
     align-items: center;
     text-align: center;
     padding: 20px;
+}
+
+.home {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
 
 .logo {
@@ -109,6 +112,11 @@ nav {
     width: 50px;
     height: 50px;
     object-fit: contain;
+    transition: transform 0.5s ease-in-out;
+}
+
+.skill-box img:hover {
+    transform: rotate(360deg);
 }
 
 .skill-box span {
@@ -121,5 +129,54 @@ nav {
 
 @media (max-width: 750px) {
     .nav-bar { flex-direction: column; text-align: center; }
-    main { grid-template-columns: 1fr; grid-template-rows: 1fr 1fr;}
+    .home { grid-template-columns: 1fr; grid-template-rows: 1fr 1fr;}
+}
+
+.blog {
+    display: grid;
+    grid-template: auto 1fr auto / auto 1fr auto;
+    text-align: center;
+}
+
+@keyframes float {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-15px); }
+    100% { transform: translateY(0px); }
+}
+
+.floating {
+    font-size: 32px;
+    animation: float 2s infinite ease-in-out;
+}
+
+.about {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+}
+
+.experience {
+    display: flex;
+    flex-direction: column;
+}
+
+.experience h1 {
+    text-decoration: underline;
+}
+
+.experience ul {
+    list-style-position: inside;
+    text-align: center;
+}
+
+.experience li {
+    padding: 5px;
+}
+
+.about div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 10px;
 }
