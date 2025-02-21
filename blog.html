@@ -5,6 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog</title>
     <link href="common_style.css" rel="stylesheet">
+    <style>
+        ul {
+            list-style-position: inside;
+            text-align: center;
+            padding: 0;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -13,19 +20,65 @@
                 <li><a href="index.html">Home</a></li>
                 <li><a href="aboutme.html">About Me</a></li>
                 <li class="active"><a href="blog.html">Blog</a></li>
+                <li><a href="hobbies.html">Hobbies</a></li>
             </ul>
         </nav>
     </header>
-    <main class="blog">
+    <main class="grail">
         <aside>
-            <h2>Left Sidebar</h2>
+            <h2>Recent Posts</h2>
+            <ul class="blog-sidebar">
+                <li><a href="blog.html">Microsoft Azure vs. Amazon AWS</a></li>
+                <li>More coming soon...</li>
+            </ul>
         </aside>
         <article>
-            <h2>Article</h2>
-            <p>This is the main content area.</p>
+            <h2>Microsoft Azure vs. Amazon AWS</h2>
+            <h3>-based on my personal experience-</h3>
+            <p>
+                &emsp;  This blog comparing Azure and AWS is based on unequal experiences
+                with both of these cloud services. During my internship with Bestpass, I gained
+                experience with Azure as that is what the company used to host their application.
+                With AWS my experience comes from my current knowledge gained from working through
+                an AWS certification course. That being said, my comparisons will be more from hands on
+                experience and less about the difference in technical specifications. For more information on
+                the technical specs of these two cloud services, check out the GeeksForGeeks article linked
+                in the "Learn More!" section.
+            </p>
+            <div class="azure-aws">
+                <div>
+                    <h3>Azure</h3>
+                    <ul>
+                        <li>Second largest cloud service provider</li>
+                        <li>Easily works with Microsoft SQL Server</li>
+                        <li>Strong security and authentication procedures that are well documented on their implementation</li>
+                        <li>Smooth compatibility with other Microsoft tools</li>
+                        <li>Easier setup and a structure that makes more sense</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>AWS</h3>
+                    <ul>
+                        <li>Largest cloud service provider</li>
+                        <li>Tons of customization options, can be tricky for beginners</li>
+                        <li>There is a lot of documentation which can get confusing quickly</li>
+                        <li>Seems to offer a wider range of services</li>
+                        <li>Gives you more control over your cloud service</li>
+                    </ul>
+                </div>
+            </div>
         </article>
         <aside>
-            <h2>Right Sidebar</h2>
+            <h2>Learn More!</h2>
+            <ul class="blog-sidebar">
+                <li><a href="https://azure.microsoft.com/en-us/" target="_blank">Checkout Azure</a></li>
+                <li><a href="https://aws.amazon.com/" target="_blank">Checkout AWS</a></li>
+                <li><a href="https://azure.microsoft.com/en-us/resources/training-and-certifications#self-directed-training" target="_blank">Get Azure Certified</a></li>
+                <li><a href="https://aws.amazon.com/certification/" target="_blank">Get AWS Certified</a></li>
+                <li><a href="https://www.geeksforgeeks.org/comparisons-between-azure-vs-aws/" target="_blank">GeeksForGeeks Article</a></li>
+            </ul>
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/azure/azure-original.svg" alt="azure logo" width="150">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/amazonwebservices/amazonwebservices-original-wordmark.svg" alt="aws logo" width="175">
         </aside>
     </main>
     <footer>

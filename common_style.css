@@ -223,9 +223,9 @@ nav {
 
 .azure-aws {
     display: flex;
-    gap: 200px;
+    gap: 10px;
     justify-content: center;
-    align-items: flex-start;
+    align-items: start;
     padding: 10px;
 }
 
@@ -252,4 +252,9 @@ nav {
 @keyframes glow {
     from { text-shadow: 0 0 10px #333333, 0 0 15px #333333, 0 0 20px #333333; } /* Dark Gray */
     to { text-shadow: 0 0 10px #aaaaaa, 0 0 15px #aaaaaa, 0 0 20px #aaaaaa; }
+}
+
+.azure-aws div{
+    display: flex;
+    flex-direction: column;
 }
