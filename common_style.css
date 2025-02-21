@@ -132,12 +132,6 @@ nav {
     .home { grid-template-columns: 1fr; grid-template-rows: 1fr 1fr;}
 }
 
-.blog {
-    display: grid;
-    grid-template: auto 1fr auto / auto 1fr auto;
-    text-align: center;
-}
-
 @keyframes float {
     0% { transform: translateY(0px); }
     50% { transform: translateY(-15px); }
@@ -179,4 +173,83 @@ nav {
     flex-direction: column;
     align-items: center;
     padding-top: 10px;
+}
+
+.grail {
+    display: grid;
+    grid-template-columns: 0.5fr 1fr 0.5fr;
+    gap: 20px;
+    padding: 10px;
+    align-items: start;
+}
+
+.grail h3 {
+    margin-top: -15px;
+}
+
+.blog-sidebar ul {
+    list-style-position: inside;
+    text-align: center;
+}
+
+.blog-sidebar li {
+    padding-bottom: 10px;
+}
+
+.blog-sidebar li a{
+    color: white;
+    transition: color 0.3s ease-in-out;
+}
+
+.blog-sidebar li a:hover {
+    color: #0073e6;
+}
+
+.grail article {
+    background-color: #121212;
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.grail aside {
+    background-color: #121212;
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.azure-aws {
+    display: flex;
+    gap: 200px;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 10px;
+}
+
+.azure-aws ul {
+    display: flex;
+    flex-direction: column;
+    list-style-position: inside;
+    padding: 0;
+    margin: 0;
+}
+
+.grail h1 {
+    text-decoration: underline;
+    margin-bottom: 40px;
+}
+
+.magic-text {
+    font-size: 1.25rem;
+    color: white;
+    text-shadow: 0 0 10px #333333, 0 0 15px #333333, 0 0 20px #333333;
+    animation: glow 1s infinite alternate;
+}
+
+@keyframes glow {
+    from { text-shadow: 0 0 10px #333333, 0 0 15px #333333, 0 0 20px #333333; } /* Dark Gray */
+    to { text-shadow: 0 0 10px #aaaaaa, 0 0 15px #aaaaaa, 0 0 20px #aaaaaa; }
 }
