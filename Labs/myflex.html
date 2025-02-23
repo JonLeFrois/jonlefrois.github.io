@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Flexbox Fun</title>
+<style>
+  /* Additional styles for fun */
+    .red { background: tomato; }
+    .blue { background: dodgerblue; }
+    .green { background: mediumseagreen; }
+    .orange { background: orange; }
+    .purple { background: rebeccapurple; }
+    .flex-item { display: flex; width: 100px; height: 100px; color: white; font-size: 2em; justify-content: center; align-items: center; }
+    .flex-container { display: flex; padding: 20px; background-color: lightgray; justify-content: space-around; flex-wrap: wrap; align-content: space-around; }
+    nav { display: flex; background: #333; color: white; align-items: center; justify-content: space-between; padding: 0px 20px; font-size: 24px; }
+    nav a { color: white; text-decoration: none; padding: 10px;}
+    nav div { font-size: 36px;}
+    nav ul { display: flex; flex-direction: row; list-style: none;}
+    @media (min-width: 600px) {
+        .flex-item { color: grey; }
+    }
+    @media (min-width: 900px) {
+        .flex-container { justify-content: center; }
+        .flex-item { color: purple; }
+    }
+    @media (max-width: 600px) {
+        nav { flex-direction: column; }
+        nav div { font-size: 24px; }
+        nav ul { width: 100%; font-size: 16px; flex-direction: column; justify-content: flex-start; }
+        nav li { padding: 10px; }
+    }
+</style>
+
+</head>
+<body>
+    <header>
+        <nav>
+            <div>Logo</div>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="flex-container">
+            <div class="flex-item red ">1</div>
+            <div class="flex-item blue ">2</div>
+            <div class="flex-item green ">3</div>
+            <div class="flex-item orange ">4</div>
+            <div class="flex-item purple ">5</div>
+        </div>
+    </main>
+
+    <footer>
+        <p>Do we need this?</p>
+    </footer>
+
+</body>
+</html>
