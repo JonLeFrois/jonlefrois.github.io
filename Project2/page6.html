@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Final Showdown</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        fieldset {
+            margin-bottom: 10px;
+            padding: 15px;
+        }
+        button {
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <section class="container">
+        <h1>The Final Showdown</h1>
+        <p>After a long journey filled with trials and challenges, you finally stand before Malakar's lair. The dark sorcerer awaits, the Crystal of Wisdom in his grasp. It's time to make your move.</p>
+        <fieldset>
+            <legend>How will you confront Malakar?</legend>
+            <label for="confrontation">Choose wisely:</label>
+            <select id="confrontation" name="confrontation" required>
+                <option value="">--Please choose an option--</option>
+                <option value="fight">Attack first</option>
+                <option value="negotiate">Wait for Malakar to make the first move</option>
+                <option value="trick">Try to negotiate</option>
+            </select>
+        </fieldset>
+        <fieldset>
+            <legend>Character Information</legend>
+            <fieldset>
+                <legend>The Brave</legend>
+                <label for="playerName">Your Name:</label>
+                <input type="text" id="playerName" name="playerName">
+            </fieldset>
+            <fieldset>
+                <legend>Select Your Weapon:</legend>
+                <label><input type="radio" name="weapon" value="sword"> Sword</label>
+                <label><input type="radio" name="weapon" value="bow"> Bow</label>
+                <label><input type="radio" name="weapon" value="staff"> Staff</label>
+            </fieldset>
+            <fieldset>
+                <legend>Select Your Armor:</legend>
+                <label><input type="checkbox" name="armor" value="plate"> Plate Armor</label>
+                <label><input type="checkbox" name="armor" value="leather"> Leather Armor</label>
+                <label><input type="checkbox" name="armor" value="cloak"> Cloak</label>
+            </fieldset>
+            <label for="message">Leave a Message for Malakar:</label>
+            <textarea id="message" name="message" rows="3" cols="60"></textarea>
+        </fieldset>
+        <button id="faceMalakar">Face Malakar</button>
+        <p>Your choice here will determine the fate of the kingdom. Choose wisely.</p>
+    </section>
+    <script>
+        document.getElementById("faceMalakar").addEventListener("click", function() {
+            window.location.href = "page7.html";
+        });
+    </script>
+</body>
+</html>

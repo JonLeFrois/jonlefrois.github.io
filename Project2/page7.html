@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conclusion</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        button {
+            display: flex; 
+            margin: 20px auto;
+        }
+    </style>
+</head>
+<body>
+    <section class="container">
+        <h1>Your Quest Has Concluded</h1>
+        <p>Based on your choices, [Insert a dynamic conclusion based on the user's journey and final decision]. The kingdom will remember your deeds for generations to come.</p>
+        <p>We hope you enjoyed your adventure. Would you like to provide feedback on your experience?</p>
+        <textarea placeholder="Enter your feedback here..." rows="5" cols="60"></textarea>
+        <button id="submitFeedback">Submit Feedback</button>
+        <button id="playAgain">Play Again</button>
+    </section>
+    
+    <script>
+        document.getElementById("playAgain").addEventListener("click", function() {
+            window.location.href = "welcome.html";
+        });
+        document.getElementById("submitFeedback").addEventListener("click", function() {
+            window.location.href = "thankyou.html";
+        });
+    </script>
+</body>
+</html>
