@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stopwatch</title>
+</head>
+<body>
+    <p id="timer">00</p>
+    <button id="start">Start</button>
+    <button id="stop">Stop</button>
+
+    <script>
+        let counter = 0;
+        let intervalId = null;
+
+        const timer = document.getElementById("timer");
+        const startBtn = document.getElementById("start");
+        const stopBtn = document.getElementById("stop");
+
+        function startTimer() {
+            if(!intervalId){
+                intervalId = setInterval(() => {
+                    counter++;
+                    if(counter < 10){
+                        timer.textContent = "0" + counter.toString();
+                    } else {
+                        timer.textContent = counter.toString();
+                    }
+                }, 1000);
+            }
+        }
+
+        function stopTimer() {
+            clearInterval(intervalId);
+            intervalId = null;
+        }
+
+        startBtn.addEventListener("click", startTimer);
+        stopBtn.addEventListener("click", stopTimer);
+    </script>
+</body>
+</html>
