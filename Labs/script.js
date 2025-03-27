@@ -43,7 +43,7 @@ function validateForm() {
         emailError.textContent = emailValidationMessage;
         isValid = false;
     }
-    // << ADD CODE HERE >>
+    
     // Do something similar for SienaID error handling.
     const idValidationMessage = validateSienaID(sienaIDInput.value.trim());
 
